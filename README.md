@@ -18,16 +18,15 @@ knitr::opts_chunk$set(echo = TRUE) # expose your code, use FALSE sparingly
 Keep files together: input data, R scripts, analysis results, figures  
 
 1) GitHub: create a new repo  
-<https://github.com> `Repositories` \> `New`  
+`Repositories` \> `New`  
 * Repository name: stat545  
 * Private
 * Initialize with: Add README file
 `Create repository` \> click `<> Code`  
 Clone/Copy repository HTTPS URL: <https://github.com/emkim1/stat545.git>  
 
-2) RStudio: create a new project using the new GitHub repo
+2) RStudio: create a new project using the new GitHub repo  
 `File` \> `New Project` \> `Version Control` \> `Git` \>  
-
 Repository URL: <https://github.com/emkim1/stat545.git>  
 `Directory name`: `stat545`  
 Create project as a subdirectory of: `/Users/ekim/repo/R`\
@@ -41,9 +40,9 @@ Create project as a subdirectory of: `/Users/ekim/repo/R`\
 4) Edit READ.me, commit, push to GitHub  
 
 5) Workflow:  
-Pull (if collaborate) \> Make changes (and save) \> Stage \> Commit \> Push  
+`Pull` (if collaborate) \> Make changes (and save) \> `Stage` \> `Commit` \> `Push`  
 
-GitHub maximum file size is 50 MB, repository max is 1-5 GB
+GitHub maximum file size is 50 MB, repository max is 1-5 GB  
 <https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github>
 
 ## Start a R Markdown File
@@ -62,6 +61,10 @@ output:
     keep_md: true 
 
 2) Add to `.gitignore`  
+
+* filename.html
+
+3) Push
 
 * README.html
 
