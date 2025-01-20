@@ -35,43 +35,88 @@ Create project as a subdirectory of: `/Users/ekim/repo/R`\
 3) Add to `.gitignore`:
 
 * .DS_Store  
-* .gitignore   
+* .gitignore
+* .README.html 
 
-4) Edit READ.me, commit, push to GitHub  
-
-5) Workflow:  
-`Pull` (if collaborate) \> Make changes (and save) \> `Stage` \> `Commit` \> `Push`  
+4) Edit README.md, Commit, Push to GitHub  
 
 GitHub maximum file size is 50 MB, repository max is 1-5 GB  
 <https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github>
 
 ## Start a R Markdown File
+<https://daattali.gitbooks.io/stat545-ubc-github-io/content/block007_first-use-rmarkdown.html>
 
 `File` \> `New File` \> `R Markdown..`\
 `Document` \> `Title` field, `Default Output Format` select `HTML` \> OK
 
 Titles should be similar: `R Markdown` (human) and filename `rmarkdown.Rmd` (computer - no spaces)  
 
-1) Add to YAML (HTML with md)
+1) Add to YAML (HTML with md)  
 output: 
   html_document:   
     theme: united  
     toc: true  
     toc_float: true  
     keep_md: true 
+    
+    Delete cars code, pressure plot
 
 2) Add to `.gitignore`  
 
-* filename.html
+* rmarkdown.html
 
-3) Push
+3) Workflow:  
+RStudio: `Pull` (when collaborate) \> Edit locally and save \> `Stage` \> `Commit` \> `Push`  
+* Knit to generate `README.html
+* `.Rmd` and `.md`: Stage, Commit and Push
 
-* README.html
+## R Markdown
 
-### R Markdown
-
-Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. <http://rmarkdown.rstudio.com>.
-
+Markdown is a simple formatting syntax for authoring HTML, PDF and MS Word documents. <http://rmarkdown.rstudio.com>.
 Click the **Knit** button to generate a document of content and the output of embedded R code.  
 `foo.Rmd --> foo.md --> foo.html`
+
+Write a paper - intro, methods, results, discussion, conclusion - with the code for each section  
+Entire pipeline in an R Markdown document: data processing, analysis, outputs, visualization
+Figures update when code parameters change  
+
+## Formatting
+
+### Blockquote
+
+`>` to indent
+
+### Bullet point
+
+### Font
+
+*italic*  `*italic*` or `_italic_`  
+**bold**  `**bold**` or `__bold__`  
+***italic bold***   `***italic bold***` or `___italic bold___`  
+<s>strikethrough</s>  `<s>strikethrough</s>`  
+`verbatim` \``verbatim` \`        
+text^super^  `text^super^`  
+text~sub~  `text~sub~`
+
+### Section Header
+
+`#`, then a space before the header text (`#` Biggest, `######` Smallest)
+
+### Equation & Symbol
+
+#### Inline equation: 
+the average is computed as $\frac{1}{n} \sum_{i=1}^{n} x_{i}$  
+
+#### Display equation:
+$$
+\begin{equation*}
+|x|= 
+\begin{cases} x & \text{if $x≥0$,} \\\\
+-x &\text{if $x\le 0$.}
+\end{cases}
+\end{equation*}
+$$
+
+#### Symbol: 
+$\sigma$ `$\sigma$`  to render as TeX Math, enclose by `$`  
 
