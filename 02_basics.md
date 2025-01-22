@@ -11,6 +11,16 @@ output:
 ---
 
 
+     
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/cm002_r-rstudio-intro.html  
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/block002_hello-r-workspace-wd-project.html  
+
+## Update R and R Studio: 
+https://happygitwithr.com/install-r-rstudio  https://happygitwithr.com/rmd-test-drive   
+Update RStudio every 1-2 months:  check version `RStudio > About RStudio`      
+Update R 1-2x / year, last major change in April 2020 with 4.0.0:  `R.version.string`
+Stay < 1 minor version behind, else pre-built binary add-on packages from CRAN will not install   
+rmarkdown:  check version `packageVersion("rmarkdown")` 
 
 ## RStudio
 Default panes:  
@@ -21,7 +31,7 @@ Default panes:
 
 Keyboard shortcuts: `option`+`shift`+`K`
 
-Quit RStudio: ⌘Q or `q()` in Console 
+Quit RStudio: ⌘Q or `q()` in Console  
 Save workspace: `Save workspace image to ~/.Rdata`  
 
 ## R Objects
@@ -44,7 +54,7 @@ Demarcate words:
 * CamelCase
 
 ## R functions 
-Specify function `argument = value` or argument by position  
+Specify a function: `argument = value` or argument by position  
 `functionName(arg1 = val1, arg2 = val2, and so on)`
 
 Functions: Type part of name and hit TAB. Floating help shows arguments. F1 shows full documentation.  
@@ -69,7 +79,7 @@ date()
 ```
 
 ```
-## [1] "Tue Jan 21 16:07:36 2025"
+## [1] "Wed Jan 22 11:35:20 2025"
 ```
 
 ## Workspace
@@ -159,6 +169,14 @@ plot(x,y)
 abline(a,b, col = "purple")
 dev.off()
 ```
+
+## Source code  
+Place source code for every object in a particular directory for later editing and retrieval. 
+Write code for humans, write data for computers  
+Files names: number_clear-description.filetype  
+Dates: yyyy-mm-dd_clear-description.filetype  
+
+`#` to comment `command + shift + C`  
   
 ## Workflow
 
@@ -171,6 +189,8 @@ dev.off()
 Clean workspace with broom or `rm(list=ls())`  
 Restart R to re-run analysis to ensure that code is complete/correct     
 
-`#` to comment `command + shift + C`  
+
+
+
 
  

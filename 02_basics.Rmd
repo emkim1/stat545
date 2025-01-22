@@ -13,6 +13,16 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+     
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/cm002_r-rstudio-intro.html  
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/block002_hello-r-workspace-wd-project.html  
+
+## Update R and R Studio: 
+https://happygitwithr.com/install-r-rstudio  https://happygitwithr.com/rmd-test-drive   
+Update RStudio every 1-2 months:  check version `RStudio > About RStudio`      
+Update R 1-2x / year, last major change in April 2020 with 4.0.0:  `R.version.string`
+Stay < 1 minor version behind, else pre-built binary add-on packages from CRAN will not install   
+rmarkdown:  check version `packageVersion("rmarkdown")` 
 
 ## RStudio
 Default panes:  
@@ -23,7 +33,7 @@ Default panes:
 
 Keyboard shortcuts: `option`+`shift`+`K`
 
-Quit RStudio: ⌘Q or `q()` in Console 
+Quit RStudio: ⌘Q or `q()` in Console  
 Save workspace: `Save workspace image to ~/.Rdata`  
 
 ## R Objects
@@ -46,7 +56,7 @@ Demarcate words:
 * CamelCase
 
 ## R functions 
-Specify function `argument = value` or argument by position  
+Specify a function: `argument = value` or argument by position  
 `functionName(arg1 = val1, arg2 = val2, and so on)`
 
 Functions: Type part of name and hit TAB. Floating help shows arguments. F1 shows full documentation.  
@@ -71,14 +81,24 @@ date()
 
 ## Workspace
 
-Objects appear in the workspace Environment  
+Objects appear in the workspace Environment
 
 * List objects: `objects()` or `ls()` 
 * Remove object y: `rm(y)`
 * Remove everything: `rm(list=ls())`   
 * or click the broom in Environment pane  
 
+## Source code  
+Save your R scripts: reproduce your analysis with input data and R code.     
+
+Place source code for every object in a particular directory for later editing and retrieval. 
+Write code for humans, write data for computers  
+Files names: number_clear-description.filetype  
+Dates: yyyy-mm-dd_clear-description.filetype  
+
 ## Working directory  
+Organize your projects into directories. Set the working directory to the project directory.  
+
 Where R looks for files to load. Where R writes files to disk.  
 Check working directory or set working directory  
 ```r
@@ -113,16 +133,16 @@ abline(a,b, col = "purple")
 dev.off() 
 ```
 This is a good start, so let's preserve the logic and code.  
-Go to `History` > `To Source` 
-This pastes the code into `Source` as a new R script     
+`History` > `To Source` to paste the code into `Source` as a new R script     
 Save the code as R script `.R` or `.r`  or Rmd `.Rmd`  
+`#` to comment `command + shift + C`  
 Quit and inspect project folder. View the PDF.  
 
 Restart RStudio  
 Edit code  
 
 * Set the sample size `n` at the top, replace hard-wired 40's with `n`  
-* Alter the sample size `n`, the slope of line `b`, the color of the line
+* Alter the sample size `n`, the slope of line `b`, the color of the line  
 
 Re-run code
 
@@ -156,7 +176,7 @@ plot(x,y)
 abline(a,b, col = "purple")
 dev.off()
 ```
-  
+
 ## Workflow
 
 * Create an RStudio project for an analytical project  
@@ -168,6 +188,8 @@ dev.off()
 Clean workspace with broom or `rm(list=ls())`  
 Restart R to re-run analysis to ensure that code is complete/correct     
 
-`#` to comment `command + shift + C`  
+
+
+
 
  
