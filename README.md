@@ -13,24 +13,31 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE) # expose your code, use FALSE sparingly
 ```
+https://happygitwithr.com/new-github-first.html 
 
-## Start a R Project, GitHub first
+## Start a R Project, GitHub first  
 Keep files together: input data, R scripts, analysis results, figures  
+This new sub-directory `stat545` serves as:
 
-1) GitHub: create a new repo  
-`Repositories` \> `New`  
-* Repository name: stat545  
+* a remote GitHub repository linked to a local Git repository    
+* an RStudio Project  
+* a directory on your computer
+
+1) GitHub: make a repo  
+`Repositories` > `New`  
+* Repository name: `stat545`  
 * Private
-* Initialize with: Add README file
-`Create repository` \> click `<> Code`  
-Clone/Copy repository HTTPS URL: <https://github.com/emkim1/stat545.git>  
+* Initialize with: Add `README file`  
+`Create repository` > click `<> Code`  
+Copy the clone repository HTTPS URL  <https://github.com/emkim1/stat545.git>  
 
-2) RStudio: create a new project using the new GitHub repo  
-`File` \> `New Project` \> `Version Control` \> `Git` \>  
-Repository URL: <https://github.com/emkim1/stat545.git>  
-`Directory name`: `stat545`  
-Create project as a subdirectory of: `/Users/ekim/repo/R`\
-√ `Open in new session` \> `Create Project` 
+2) RStudio: start a new project    
+`File` > `New Project` > `Version Control` > `Git`  
+
+* Repository URL: <https://github.com/emkim1/stat545.git>  
+* Directory name: `stat545`  
+Create project as a sub-directory of: `/Users/ekim/repo/R`  
+√ `Open in new session` > `Create Project` 
 
 3) Add to `.gitignore`:
 
@@ -38,20 +45,32 @@ Create project as a subdirectory of: `/Users/ekim/repo/R`\
 * .gitignore
 * .README.html 
 
-4) Edit README.md, Commit, Push to GitHub  
+4) Look for the `README.md` file from GitHub  
+Workflow: Edit `README.md`, Commit, Push to GitHub  
 
-GitHub maximum file size is 50 MB, repository max is 1-5 GB  
-<https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github>
+* click `Git` tab  
+* check `Staged` box for files to commit  (Diffs show what changed since last commit)  
+* click `Commit`  
+* type a Commit message = short description of what/why changed    
+* click `Commit`  
+* Pull from GitHub  
+* Push to GitHub after a couple of commits  
+* Check change on GitHub  
 
 ## Start a R Markdown File
 <https://daattali.gitbooks.io/stat545-ubc-github-io/content/block007_first-use-rmarkdown.html>
+https://happygitwithr.com/rmd-test-drive  
 
-`File` \> `New File` \> `R Markdown..`\
-`Document` \> `Title` field, `Default Output Format` select `HTML` \> OK
+`File` > `New File` > `R Markdown..`
+`Document` > `Title` field, `Default Output Format` select `HTML` > OK
 
 Titles should be similar: `R Markdown` (human) and filename `rmarkdown.Rmd` (computer - no spaces)  
 
-1) Add to YAML (HTML with md)  
+1) YAML output format (HTML with md)  
+
+* Click Gear > `Output Options` > General > Include TOC, Depth of header 3, Apply theme `united`  
+Advanced > `Keep markdown source file`  
+* Or hand-edit:  
 output: 
   html_document:   
     theme: united  
