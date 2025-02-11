@@ -12,18 +12,47 @@ output:
 
 
 
+## STAT 545 Current  
+https://stat545.stat.ubc.ca/course/  topics, worksheets, projects
+https://stat545.com/index.html  online book  
+https://www.youtube.com/channel/UCrB-uourf2vxGeBnGjQrA0w  
+
+SET-UP
 01_github: setup, files      
-02_basics: R basics, workspace, working directory, RStudio projects
-03_github: 
-Care and feeding of data in R   
+02_basics: R basics, workspace, working directory, RStudio projects  
+
+VERSION CONTROL and R MARKDOWN  
+03_githubmd: Git, GitHub and RStudio     
+04_rmd: R Markdown, Authoring, Reproducibility  
+05_data-base: Care and feeding of data in R   
+
+## STAT 545 Data wrangling, exploration and analysis with R  
+
+https://stat545.stat.ubc.ca course at UBC
+
+https://happygitwithr.com/ Git & GitHub  
+
+## Old STAT 545 2015 on gitbooks
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/index.html   2015 book form  
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/topics.html  2015 book topics + class meetings  
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/syllabus.html 2015 class meetings  
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/bit006_github-browsability-wins.html  about git  
+
+## Archive of old STAT 545 2015  
+https://github.com/STAT545-UBC/STAT545-UBC-original-website  newer   
+https://github.com/tonydurst/STAT545-UBC.github.io/tree/master  has git 
+
+Jenny Bryan repo  
+https://github.com/rstudio-education/stat545/tree/master
+
+GitHub Student repo  
+https://github.com/daattali/UBC-STAT545/tree/master  
 
 ## Intro to STAT 545  
-https://daattali.gitbooks.io/stat545-ubc-github-io/content/index.html   
-https://speakerdeck.com/jennybc/ubc-stat545-2015-cm001-intro-to-course  
-
+https://speakerdeck.com/jennybc/ubc-stat545-2015-cm001-intro-to-course 
 
 ## Topic list
-https://daattali.gitbooks.io/stat545-ubc-github-io/content/topics.html  
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/topics.html  2015
 
 * [Install R and Rstudio](https://daattali.gitbooks.io/stat545-ubc-github-io/content/block000_r-rstudio-install.html)  
 * [Setup Git GitHub RStudio](https://daattali.gitbooks.io/stat545-ubc-github-io/content/git00_index.html)  
@@ -51,7 +80,7 @@ https://daattali.gitbooks.io/stat545-ubc-github-io/content/topics.html
 * Distribute data and code via an R package  
 
 ## Syllabus: class meetings and homework  
-https://daattali.gitbooks.io/stat545-ubc-github-io/content/syllabus.html  
+https://daattali.gitbooks.io/stat545-ubc-github-io/content/syllabus.html  2015
 
 STAT545A Exploratory Data Analysis   
 [cm001](https://daattali.gitbooks.io/stat545-ubc-github-io/content/cm001_course-intro-sw-install-account-signup.html): Intro to course; S/W install; acct sign-ups  
@@ -83,18 +112,18 @@ cm110: ditto
 cm111: Get data from the web  
 cm112: ditto  
 
-[hw01](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw01_edit-README.html): Edit README.md
-[hw02](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw02_explore-gapminder-use-rmarkdown.html): Explore Gapminder and use R markdown
-[hw03](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw03_dplyr-and-more-ggplot2.html): Manipulate and summarize the Gapminder data with dplyr; make companion figs with ggplot2
-[hw04](http://stat545-ubc.github.io/hw04_write-function-use-plyr.html): Manipulate and summarize the Gapminder data with custom functions and plyr
-[hw05](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw05_factor-boss-files-out-in.html): Prove you are in control of factors by writing and reading files
-[hw06](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw06_repo-hygiene-figure-boss.html): Optional, clean your course repo
-[hw07](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw07_data-wrangling-grand-finale.html): Data wrangling Grand Finale
-[hw08](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw08_data-cleaning.html): re: handling character data and data cleaning
-[hw09](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw09_automation.html): Automating Data-analysis Pipelines
-[hw10](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw10_package.html): Write an R package
-[hw11](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw11_build-shiny-app): Build a Shiny app
-[hw12](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw12_data-from-web): Get data from the web
+[hw01](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw01_edit-README.html): Edit README.md  
+[hw02](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw02_explore-gapminder-use-rmarkdown.html): Explore Gapminder and use R markdown  
+[hw03](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw03_dplyr-and-more-ggplot2.html): Manipulate and summarize the Gapminder data with dplyr; make companion figs with ggplot2  
+[hw04](http://stat545-ubc.github.io/hw04_write-function-use-plyr.html): Manipulate and summarize the Gapminder data with custom functions and plyr  
+[hw05](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw05_factor-boss-files-out-in.html): Prove you are in control of factors by writing and reading files  
+[hw06](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw06_repo-hygiene-figure-boss.html): Optional, clean your course repo  
+[hw07](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw07_data-wrangling-grand-finale.html): Data wrangling Grand Finale  
+[hw08](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw08_data-cleaning.html): re: handling character data and data cleaning  
+[hw09](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw09_automation.html): Automating Data-analysis Pipelines  
+[hw10](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw10_package.html): Write an R package  
+[hw11](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw11_build-shiny-app): Build a Shiny app  
+[hw12](https://daattali.gitbooks.io/stat545-ubc-github-io/content/hw12_data-from-web): Get data from the web  
 
 ## Original website   
 https://github.com/STAT545-UBC/STAT545-UBC-original-website  newer   
@@ -168,44 +197,6 @@ Reproducible research, data sharing, documentation  <https://www.youtube.com/wat
 
 > MD requests data from a researcher, who saved data on a USB drive in hexadecimal format accessible by  Cytosynth program, whose company went bankrupt in 2007.  MD tracked down a copy of the program. In the data set fields were called Sam. The PI remembered that Sam1 is the level of CXCR4 expression. Suggested MD talked to coauthor about other Sam fields, but Sam Lee was back in China.
 
-## RStudio is an IDE integrated development environment for R
-
-RStudio for: 
-
-* Project organization: knitr, R markdown, R packages  
-* Collaboration / Open Science: GitHub   
-* Version control / back up: git  
-
-## R Markdown
-easy to write / easy to publish
-
-R code is executed and output appears in the document.  
-Results are generated on-the-fly  
-
-## Git repository version control      
-Write plain text, put it under version control   
-Manage files:  writing, coding, data wrangling  
-
-## GitHub = publish Git repositories on the web
-Collaboration = the "killer app" of version control
-Know the current version, the most recent data   
-Diffs = how files have changed, when, and by whom  
-Issues = bug reports, feature requests, to do list  
-Pull requests = mechanism to propose, dicuss and merge changes into a repository  
-
-GitHub renders Markdown.md files  
-Click raw to see the raw Markdown  
-GitHub renders .csv and .tsv, comma and tab delimited files
-
-Packages on GitHub: yihui/knitr, hadley/ggplot2, hadley/dplyr  
-https://github.com/unorthodox123/RacialDotMap  map of racial segregation    
-https://github.com/corynissen/foodborne_classifier analyze tweets to id sources of food poisoning  
-
-## R or Python scripts () to process delimited or structured files 
-
-Raw data (processing code) Analytic data (analytic code) computational results (presentation code)  
-Figures, Tables, Numerical Summaries + Text ---> Article  
-
 Jennifer (Jenny) Bryan:  I teach and perform lots of data analysis. 
 BA in econ and german, PhD biostatistics, assoc prof @ UBS  
 50% statistics / 50% Michael Smith Laboratories  
@@ -251,8 +242,4 @@ https://github.com/tonydurst/STAT545-UBC.github.io/blob/master/cm001_course-intr
   * [Roger Peng](http://www.biostat.jhsph.edu/~rpeng/)
   * [GNU Make for Reproducible Data Analysis](http://zmjones.com/make/)
   * [stackoverflow](http://stackoverflow.com)
-
-
-
-
 
