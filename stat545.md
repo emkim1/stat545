@@ -13,18 +13,18 @@ output:
 
 
 ## STAT 545 Current  
-https://stat545.stat.ubc.ca/course/  topics, worksheets, projects
+https://stat545.stat.ubc.ca/course/  topics, worksheets, projects  
 https://stat545.com/index.html  online book  
 https://www.youtube.com/channel/UCrB-uourf2vxGeBnGjQrA0w  
 
-SET-UP
-01_github: setup, files      
-02_basics: R basics, workspace, working directory, RStudio projects  
+SET-UP  
+01_github: Setup      
+02_basics: R, RStudio  
 
 VERSION CONTROL and R MARKDOWN  
-03_githubmd: Git, GitHub and RStudio     
-04_rmd: R Markdown, Authoring, Reproducibility  
-05_data-base: Care and feeding of data in R   
+03_githubmd: Git, GitHub, RStudio     
+04_rmd: R Markdown   
+05_data-base: Data frames  
 
 ## STAT 545 Data wrangling, exploration and analysis with R  
 
