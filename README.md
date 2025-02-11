@@ -62,14 +62,16 @@ Workflow: Edit `README.md`, Commit, Push to GitHub
 https://happygitwithr.com/rmd-test-drive  
 
 `File` > `New File` > `R Markdown..`
-`Document` > `Title` field, `Default Output Format` select `HTML` > OK
+`Document` > `Title` field, `Default Output Format` select `HTML` > OK  
+√ Use current date when rendering document  
 
 Titles should be similar: `R Markdown` (human) and filename `rmarkdown.Rmd` (computer - no spaces)  
 
 1) YAML output format (HTML with md)  
 
-* Click Gear > `Output Options` > General > Include TOC, Depth of header 3, Apply theme `united`  
-Advanced > `Keep markdown source file`  
+* Click Gear > `Output Options` >  
+General: √ Include TOC (no toc_float option), Depth of header 3, Apply theme `united`  
+Advanced: √ `Keep markdown source file`  
 * Or hand-edit:  
 output: 
   html_document:   
@@ -87,7 +89,9 @@ output:
 3) Workflow:  
 RStudio: `Pull` (when collaborate) \> Edit locally and save \> `Stage` \> `Commit` \> `Push`  
 * Knit to generate `README.html
-* `.Rmd` and `.md`: Stage, Commit and Push
+* `.Rmd` and `.md`: Stage, Commit and Push  
+* Force git push to overwrite GitHub file:  `git push -f origin main`  
+ 
 
 ## R Markdown
 
