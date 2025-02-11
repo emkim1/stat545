@@ -15,7 +15,31 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 https://happygitwithr.com/  last update 2020  
+https://happygitwithr.com/rmd-test-drive 
+https://speakerdeck.com/jennybc/ubc-stat545-2015-cm001-intro-to-course
 https://speakerdeck.com/jennybc/happy-git-and-github-for-the-user  
+
+## ## STAT 545 Episode 2A: Git and GitHub for an Organized Project
+https://www.youtube.com/watch?v=l2ftm-YwJs8  
+
+1) Use cloud-based storage as your official project storage 
+2) Use cloud version control   
+  Track changes to your analysis.    
+   See how a project came to be: previous versions     
+3) Use computer version control:  what & when to track and sync with the cloud.  
+  `Pull` from cloud (1st time is a clone)  
+  `Push` to cloud to update with computer  
+* Git treats the cloud-based service as the official version of the project  
+  `Pull` before `Push` = update the local version, before you update the cloud version    
+* `Commit`:  track local changes to your work since the last commit. 
+  A GitHub project is a stack of commits, called a Commit History         
+  `commits` on GitHub show the Commit History. Look at a particular file, to see who contributed to what and when.   
+4) Use Pull Requests to review changes. Team review before incorporating changes into the official version.  
+  Work on a branch, push branch to GitHub , open a pull request `Compare & pull request`
+  See where collaborators made changes, comment on those changes  
+5) Use Issues to communicate with your team:  like a project discussion board. Tag a teammate will notify them.
+  
+RStudio has a Git tab as a Git client  
 
 ## GitHub Account  
 https://github.com > sign up uniklinik      
@@ -46,19 +70,12 @@ $ clang --version
 $ git --version  
 `git version 2.37.1 (Apple Git-137.1)`  
 
-## GitHub repo files are browsable
-<https://daattali.gitbooks.io/stat545-ubc-github-io/content/bit006_github-browsability-wins.html>
 
-Inspect GitHub repository files in a browser. 
-Special handling for:  
+## RStudio is an IDE integrated development environment for R
 
-* Markdown files    
-* `README.md` Markdown files  
-* HTML files, compiled from Markdown files  
-* Source code: `.R` files
-* Delimited data files: .csv (comma-separated), .tsv (tab-separated)
-* PNG files   
-* vector-based PDF files are slower     
+* Project organization: knitr, R markdown, R packages  
+* Collaboration / open science: GitHub   
+* Version control / back up: git  
 
 ## RStudio Project  
 * a directory on your computer  
@@ -68,79 +85,53 @@ Special handling for:
 
 make commits, view history and diffs, push to /pull from GitHub
 
+## Markdown
+
+Markdown --> HTML  
+`foo.Rmd --> foo.html` 
+easy to write / easy to publish and read in browser   
 
 ## R Markdown   
-`Knit` markdown with button OR command line  
-```
-library(rmarkdown)
-render("foo.Rmd")
-```
-https://speakerdeck.com/jennybc/happy-git-and-github-for-the-user?slide=56  
-
-R Markdown --> Markdown --> HTML  
-`foo.Rmd --> foo.md --> foo.html` 
-easy to write / easy to publish   
----   
-title: "Untitled"   
-output:  
- html_document:   
- keep_md: yes.  
----   
-
-R Markdown --> Markdown  
-`foo.Rmd --> foo.md`  
-easy to write / easy to GitHub   
----   
-output:   
- md_document  
-___   
-
-Commit `foo.Rmd` and `foo.md`  
-.gitignore `foo.html` 
-
-## R
+R code is executed (on-the-fly) and output appears in the document.  
 
 R --> Markdown --> HTML  
 `foo.R --> foo.md --> foo.html` 
-easy to write / easy to publish   
----   
-title: "Untitled"   
-output:  
- html_document:   
- keep_md: yes  
----   
+easy to write / easy to publish and read in browser   
 
-R --> Markdown  
-`foo.R --> foo.md`  
-easy to write / easy to GitHub   
----   
-output:   
- md_document  
-___   
+## Git = repository version control        
+Manage files: for writing, coding, data wrangling 
+Write plain text, put it under version control   
 
-## README.md  
-`README.md` is the landing page for each directory  
-Examples:  
-Data cleaning: https://github.com/jennybc/gapminder/tree/main/data-raw  
-How to share data with a statistician https://github.com/jtleek/datasharing  
-PNG README: https://github.com/kbroman/FruitSnacks/blob/master/PhotoGallery.md  
-PNG REAMDE: https://gist.github.com/jennybc/0239f65633e09df7e5f4
+## GitHub = host Git repositories on the web
+Keep track of files: see the current version, the most recent data   
+Diff view = see exactly what changed, when, and by whom  
+Commit message = why changed  
+Issues = bug reports, feature requests, to do list  
+Pull requests = mechanism to propose, discuss and merge changes into a repository  
 
-## HTML  
-GitHub shows the raw HTML  
-Replace `https://github.com/` with `https://rawgit.com/` to render the HTML  
+## GitHub renders files nicely   
 
-## Links and embedded figures  
-`[emkim1](directoryName/)` will link to the `directoryName/` directory in the repo  
-`![](image.png)` will include `image.png` in the current directory
+* Markdown files: .md, click raw to see raw Markdown    
+* Delimited data files: .csv (comma-separated) .tsv (tab-separated)
 
-## Find files on GitHub  
-https://github.com/tonydurst/STAT545-UBC.github.io/blob/master/bit006_github-browsability-wins.md  
+* `README.md` Markdown files  
+* HTML files, compiled from Markdown files  
+* Source code: `.R` files
+* PNG files   
 
-* Press `t` to activate the file finder when in directory view. Finds files in subdirectories.  
-* Press `y` to get a permanent link when viewing a specific file. Watch what changes in the URL. This is important if you link to a file or to specific lines. Otherwise your links will break easily in the future. If the file is deleted or renamed or if lines get inserted or deleted, your links will no longer point to what you intended. Use `y` to get links that include a specific commit in the URL.
+## GitHub = publish Git repositories on the web
 
-GitHub maximum file size is 50 MB, repository max is 1-5 GB  
-<https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github>
+Open source packages on GitHub: yihui/knitr, hadley/ggplot2, hadley/dplyr  
+https://github.com/unorthodox123/RacialDotMap  map of racial segregation    
+https://github.com/corynissen/foodborne_classifier analyze tweets to id sources of food poisoning  
+
+## Makefile: R or Python scripts () to process delimited or structured files 
+GNU Make can keep complicated software in sync. Originally used to compile software. Now used to express what depends on what, to keep things in sync.    
+
+Raw data -(processing code)-> Analytic data -(analytic code)-> computational results -(presentation code)-> Figures, Tables, Numerical Summaries --> Article  <-- Text
+
+How to make results reproducible and up-to-date ?  
+If data changes, how do remember to remake figures 2B and 4 ? 
+
 
 
