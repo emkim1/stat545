@@ -14,21 +14,21 @@ output:
 
 https://speakerdeck.com/jennybc/happy-git-and-github-for-the-user
 
-# RStudio with Git and GitHub  
+## RStudio with Git and GitHub  
 Use RStudio as a Git(Hub) client.  
 Git pane: make commits, view history and diffs, push to /pull from GitHub
 
-## RStudio Project  
+### RStudio Project  
 * a directory on your computer  
 * make that an RStudio Project: save changes      
 * make that a Git repository: make commits       
 * push to GitHub periodically   
 
-## Git 
+### Git 
 Version control system = originally to manage files for software development  
 Repurposed for writing, coding, data wrangling 
 
-## (R) Markdown + Git(Hub)
+### (R) Markdown + Git(Hub)
 
 Presentable, web-friendly version of R and Rmd files. 
 
@@ -36,7 +36,7 @@ easy to write / easy to read
 `foo.R ----> foo.md`  
 `foo.Rmd --> foo.html` 
 
-## Markdown 
+### Markdown 
 
 Markdown --> HTML  
 `foo.md --> foo.html`  
@@ -46,7 +46,7 @@ Markdown -->
 `foo.md --> `     
 GitHub renders Markdown like HTML: but not code  
 
-## R Markdown + Git(Hub)  
+### R Markdown + Git(Hub)  
 
 R Markdown ---> Markdown  
 R code is executed (on-the-fly) and output appears in the markdown document  
@@ -68,11 +68,12 @@ library(rmarkdown)
 render("foo.Rmd")
 ```
 
-## R Markdown: 
-YAML header: specify the output of the Rmd file    
+### R Markdown: 
+YAML header: specify the output when rendering an Rmd document      
 
 R Markdown --> HTML  
 `foo.Rmd --> foo.html`   
+
 ---   
 title: "Untitled"   
 output: html_document   
@@ -102,40 +103,40 @@ output:
 ___   
 
 
-## R: 
-YAML header: specify the output of rendered r scripts  
+### R: 
+YAML header: specify the output when rendering an R script    
 
 R script --> HTML  
 `foo.R --> foo.html` 
----   
-title: "Untitled"   
-output: html_document   
----
+#' ---   
+#' title: "Untitled"   
+#' output: html_document   
+#' ---
 
 R script --> Markdown --> HTML  
 `foo.R --> foo.md --> foo.html` 
----   
-title: "Untitled"   
-output:  
- html_document:   
- keep_md: yes  
----   
+#' ---   
+#' title: "Untitled"   
+#' output:  
+#'  html_document:   
+#'  keep_md: yes  
+#' ---   
 
 R script --> Markdown  
 `foo.R --> foo.md`  
----   
-output:   
- md_document  
-___   
+#' ---   
+#' output:   
+#'  md_document  
+#' ___   
 
 R script  --> Markdown  
 `foo.R --> foo.md`  
----   
-output:   
- github_document  
-___   
+#' ---   
+#' output:   
+#'  github_document  
+#' ___   
 
-## RStudio Rmd with Git and GitHub  
+### RStudio Rmd with Git and GitHub  
 https://happygitwithr.com/rmd-test-drive.html
 
 Your project can be both machine & human readable  
@@ -154,7 +155,7 @@ output_format: github_document
 
 Change something, render, commit, push, repeat    
 
-## GitHub repo files are browsable
+### GitHub repo files are browsable
 https://happygitwithr.com/repo-browsability.html
 <https://daattali.gitbooks.io/stat545-ubc-github-io/content/bit006_github-browsability-wins.html>
 
@@ -187,11 +188,6 @@ Issues = bug reports, feature requests, to do list
 
 Collaboration = the "killer app" of cloud version control  
 Pull requests = mechanism to propose, discuss and merge changes into a repository  
-
-
-
-
-
 
 ## Find files on GitHub  
 https://github.com/tonydurst/STAT545-UBC.github.io/blob/master/bit006_github-browsability-wins.md  
